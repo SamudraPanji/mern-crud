@@ -1,0 +1,29 @@
+GET http://localhost:5500/products
+
+###
+
+GET http://localhost:5500/products/2
+
+###
+
+POST http://localhost:5500/products
+content-type: application/json
+
+{
+    "name": "Undangan Online 2",
+    "price": 2500
+}
+
+###
+
+PATCH  http://localhost:5500/products/3
+content-type: application/json
+
+{
+    "name": "GB BAng",
+    "price": 5500
+}
+
+###
+
+DELETE http://localhost:5500/products/1
